@@ -1,0 +1,156 @@
+DICOM	Digital Imaging and Communications in Medicine
+AE	Application Entity
+IOD	Information Object Definition
+DIMSE	DICOM Message Service Elements
+SOP	Service Object Pair
+SCU	Service Class User
+SCP	Service Class Provider
+VR	Value Representation
+UID 	Unique Identifier
+
+DICOM
+	-> Header (may be lost when converting to JPEG)
+		* Name, age, gender, and date of birth
+		* (Acquisition parameters, pixel intensity, matrix size, and dimensions of the image)
+	-> Image
+
+What does a DICOM Medical Image file contain?
+	Any DICOM medical image consists of two parts—a header and the actual image itself. The header consists of data
+	that describes the image, the most important being patient data. This includes the patient’s demographic
+	information such as the patient’s name, age, gender, and date of birth. The header may also give information on
+	image characteristics such as acquisition parameters, pixel intensity, matrix size, and dimensions of the image.
+	When a file explorer is opened to view DICOM medical imaging data, the header can give patient and image
+	information. The header is usually coded to the image so that the patient to whom the image belongs can easily be
+	identified. However, the header may sometimes be lost if the DICOM file is exported to other formats, such as
+	JPEG. Sometimes, you may want to intentionally lose the header data, usually for the purpose of anonymization in
+	research cases. This can only be done using specific software functions.
+
+PACS server:
+	PACS stands for Picture Archiving and Communications System.
+	This is basically a database in which all medical images are stored. A PACS server needs to have ample storage, as
+	DICOM files, being of high quality, tend to occupy a lot of space. Each hospital usually has its own PACS server.
+	Any medical image that is taken within a hospital is automatically stored within that PACS server.
+
+How do I view a DICOM file?
+	Proprietary software:
+		* Only on the hardware of the manufacturer
+	Third party software:
+		* From the internet, CDs, etc.
+
+What can I do to a DICOM file in addition to simply viewing the image?
+	-> Enhancing the image quality
+		* Increase or decrease the brightness of the image.
+		* Changing the contrast to better distinguish between radiodense and radiolucent areas of an image.
+		* Zoom in on the area of interest.
+		* A special method of improving image quality in the area of interest involves maximum and minimum
+		  intensity projections. This helps isolate areas that have absorbed maximum or minimum radiation,
+		  distinguishing them from surrounding areas.
+	-> Reconstructing images
+		* The initial DICOM data set contains a series of two-dimensional images, taken in all three planes—axial,
+		  coronal, and sagittal. These images can be reconstructed to give a three-dimensional view of the
+		  anatomical area. This is called 3D rendering. Another technique, called Multiplanar Reconstruction (MPR)
+		  involves making fresh slices from the 3D reconstructed images. This allows the radiologist to view
+		  different anatomical levels or angulations from the slices that were originally acquired.
+	-> Making measurements
+		* Some medical DICOM viewers allow you to make linear or even volumetric measurements of anatomical
+		  structures. This can be useful in planning treatment and assessing the efficacy of treatment. For
+		  instance, in cases of traumatic injury to the bony orbit, volumetric analysis and comparison of the
+		  injured orbit with the unaffected one can aid in planning orbital reconstruction.
+	-> Comparing and combining medical images
+		* DICOM medical applications allow the radiologist to compare two different images at the same time.
+		  This is useful when one wants to assess the progress of disease over time or the efficacy of treatment.
+		  Two different medical imaging modalities can also be combined using certain DICOM applications. For
+		  instance, combining PET and CT images can ensure that areas of high metabolic activity (located using
+		  PET) are mapped to specific anatomical sites (using CT scan). This allows the physician to extract the
+		  advantages of both types of imaging modalities at the same time.
+
+How do I Share and Export DICOM files?
+	* The DICOM medical file of a single patient consists of multiple images, all of which are of high resolution.
+	Therefore, the file size can be quite large (for instance, a single CT scan can run up to 35 MB). These files
+	therefore need to be compressed before they can be shared and transferred.
+	* There are two ways in which files can be compressed—lossless and lossy. In lossless compression, although the
+	file itself is compressed, there is no loss of information. Therefore, the original file can be recovered at any
+	time. However, this kind of compression requires a lot of processing and so lossless files are slow to open and
+	slow to save. One cannot achieve a substantial amount of compression with this method. On the other hand, lossy
+	compression allows reduction in file size by removing actual data. Usually, only redundant data is removed.
+	Sometimes however, if excessive compression is done, the image quality can be adversely affected. With this
+	method, files can be compressed to much smaller sizes than the original file.
+		-> JPEG (Joint Photographic Experts Group): The JPEG format supports both lossless and lossy compression.
+		   Standard JPEG uses lossy compression. The operator can specify how much compression is to be applied
+		   and hence can control how much data is lost. Another version, JPEG 2000, supports lossless compression.
+		   With this application, operators can identify certain areas of the image as ‘regions of interest’.
+		   These areas alone will undergo lossless compression, while other parts of the image will undergo lossy
+		   compression. JPEG is useful for easily sharing images between computers. It can be used for uploading
+		   images on websites and for standard PowerPoint presentations. On the downside, the quality of the
+		   images may not be good enough for paper publications.
+		-> TIFF (Tagged Image File Format): The TIFF format can also support both lossy and lossless compressions.
+		   TIFF delivers images of higher quality and is therefore the preferred format of several journals for
+		   publication. However, the file size is larger and this may not be suitable for use in presentations or
+		   on the internet.
+		-> PNG (Portable Network Graphics format): This supports lossless type of compression. Using PNG, image
+		   features such as brightness and transparency can be controlled. One advantage of PNG is that the
+		   images can be tagged using metadata, similar to the header of a DICOM file. This versatile format is
+		   suitable for publications, presentations, and the internet.
+		-> GIF (Graphics Interchange format): This was one of the earliest imaging formats to be introduced and
+		   is not much in use today. It has limited features and the compression is inefficient. It supports
+		   lossless type of compression and is largely used for websites.
+
+Patient IOD - information about the patient
+
+Modalities: CT, CR, NM, ...
+
+A DICOM file is an image saved in the Digital Imaging and Communications in Medicine (DICOM) format.
+
+It contains an image from a medical scan, such as an ultrasound or MRI.
+
+DICOM files may also include identification data for patients to link the image to a specific individual.
+
+You can open DICOM files with various applications, such as MicroDicom viewer (Windows), ezDICOM (Windows),
+OsiriX (macOS), and MeVisLab (multiplatform). You can also upload DCM files to View My Scans and Jack Imaging
+in a web browser and view the images.
+
+DICOM groups information into data sets. For example, a file of a chest x-ray image may contain the patient
+ID within the file, so that the image can never be separated from this information by mistake. This is similar
+to the way that image formats such as JPEG can also have embedded tags to identify and otherwise describe the image.
+
+A DICOM data object consists of a number of attributes, including items such as name, ID, etc., and also one special
+attribute containing the image pixel data (i.e. logically, the main object has no "header" as such, being merely a
+list of attributes, including the pixel data). A single DICOM object can have only one attribute containing pixel data.
+For many modalities, this corresponds to a single image. However, the attribute may contain multiple "frames", allowing
+storage of cine loops or other multi-frame data. Another example is NM data, where an NM image, by definition, is a
+multi-dimensional multi-frame image. In these cases, three- or four-dimensional data can be encapsulated in a single
+DICOM object. Pixel data can be compressed using a variety of standards, including JPEG, lossless JPEG, JPEG 2000, and
+run-length encoding (RLE). LZW (zip) compression can be used for the whole data set (not just the pixel data), but this
+has rarely been implemented.
+
+The same basic format is used for all applications, including network and file usage, but when written to a file,
+usually a true "header" (containing copies of a few key attributes and details of the application that wrote it) is added.
+
+Image display:
+To promote identical grayscale image display on different monitors and consistent hard-copy images from various printers,
+the DICOM committee developed a lookup table to display digitally assigned pixel values. To use the DICOM grayscale
+standard display function (GSDF), images must be viewed (or printed) on devices that have this lookup curve or on devices
+that have been calibrated to the GSDF curve.
+
+Value representations:
+In addition to a value representation, each attribute also has a value multiplicity to indicate the number of data
+elements contained in the attribute. For character string value representations, if more than one data element is being
+encoded, the successive data elements are separated by the backslash character "\".
+
+The core application of the DICOM standard is to capture, store and distribute medical images. The standard also provides
+services related to imaging such as managing imaging procedure worklists, printing images on film or digital media like
+DVDs, reporting procedure status like completion of an imaging acquisition, confirming successful archiving of images,
+encrypting datasets, removing patient identifying information from datasets, organizing layouts of images for review,
+saving image manipulations and annotations, calibrating image displays, encoding ECGs, encoding CAD results, encoding
+structured measurement data, and storing acquisition protocols.
+
+Disadvantages:
+* According to a paper presented at an international symposium in 2008, the DICOM standard has problems related to data
+entry. "A major disadvantage of the DICOM Standard is the possibility for entering probably too many optional fields.
+This disadvantage is mostly showing in inconsistency of filling all the fields with the data. Some image objects are
+often incomplete because some fields are left blank and some are filled with incorrect data."
+* Another disadvantage is that the file format admits executable code and may contain malware.
+
+
+
+
