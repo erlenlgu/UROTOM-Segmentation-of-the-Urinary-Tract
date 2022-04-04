@@ -1,4 +1,4 @@
-Written by Erlend L. Gundersen  
+Written by Erlend Løland Gundersen  
     erlend.l.gundersen@gmail.com
 
 # INITIAL NOTES:
