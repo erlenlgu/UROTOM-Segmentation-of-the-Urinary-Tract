@@ -1,6 +1,6 @@
 # **UROTOM-Segmentation-of-the-Urinary-Tract**
 
-The code was written during my internship on Image Processing and Analysis  
+I wrote this code during my internship on Image Processing and Analysis  
 at Lodz University of Technology, Institute of Applied Computer Science.
 
 Medical Imaging Project: UROTOM  
@@ -98,15 +98,15 @@ Written by Erlend Løland Gundersen
 
  # Libraries required for main.py and "Tools" modules:
  
-              numpy     1.20.2	   fast handling of arrays
-         matplotlib  	3.3.4	   simple plotting
-             pillow     8.2.0      image handler
-           openjpeg     2.3.0      decompress dicom files
-            pydicom     2.1.2	   handling dicom files	
-            pyvista     0.31.3     3D visualization
+              numpy     1.20.2	   fast handling of arrays  
+         matplotlib  	3.3.4	   simple plotting  
+             pillow     8.2.0      image handler  
+           openjpeg     2.3.0      decompress dicom files  
+            pydicom     2.1.2	   handling dicom files	 
+            pyvista     0.31.3     3D visualization  
               scipy	    1.6.2	   denoising	
-       scikit-fuzzy 	0.4.2	   fuzzy clustering	
-      opencv-python  	4.5.2.54   k-Means clustering
+       scikit-fuzzy 	0.4.2	   fuzzy clustering	 
+      opencv-python  	4.5.2.54   k-Means clustering  
       
       # NOTE: openjpeg and pillow have to be installed in the right order
 
