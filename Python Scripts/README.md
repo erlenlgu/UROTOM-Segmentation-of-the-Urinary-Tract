@@ -6,11 +6,9 @@ Written by Erlend Løland Gundersen
     1. main.py demonstrates the most important functions
     2. The "Tools" folder contains modules used in both main.py and "Testing"
     3. main.py runs without scipts from "Testing"
-    4. At the meeting 04/08/2021 dicom series 1105 from folder J_A was used
-    5. Follow instructions in the command window
-    6. At first it may be easier to run section by section in main.py
-    7. Rotating series such as series 1104 in folder J_A are not supported yet
-    8. Fuzzy clustering is really slow, and k-means gave very similar results
+    4. Follow instructions in the command window
+    5. Rotating series such as series 1104 in folder J_A are not supported yet
+    6. Fuzzy clustering is really slow, and k-means gave very similar results
          
         
 # INSTRUCTIONS:
