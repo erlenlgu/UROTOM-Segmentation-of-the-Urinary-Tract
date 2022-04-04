@@ -1,6 +1,6 @@
 # **UROTOM-Segmentation-of-the-Urinary-Tract**
 
-The code was written during my internship about Image Processing and Analysis  
+The code was written during my internship on Image Processing and Analysis  
 at Lodz University of Technology, Institute of Applied Computer Science.
 
 Medical Imaging Project: UROTOM  
