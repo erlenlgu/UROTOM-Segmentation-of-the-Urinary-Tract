@@ -105,6 +105,6 @@ show_axial_coronal_sagital()    display the dicom series from three angles
  
         scikit-image    0.18.1  denoising
                 bm3d    3.0.9   denoising
-           medpy    0.4.0   denoising
+               medpy    0.4.0   denoising
               plotly    5.1.0   fast plotting
                                   
