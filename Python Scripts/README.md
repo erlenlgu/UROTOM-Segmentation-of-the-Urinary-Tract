@@ -71,9 +71,9 @@ Written by Erlend Løland Gundersen
 
    **From display_tools:**
  
-show_axial_coronal_sagital()    display the dicom series from three angles   
-            show_histogram()    display histogram of a volume with pixel values  
-                  show_all()    display all images in an array of images one by one   
+   show_axial_coronal_sagital()    display the dicom series from three angles   
+               show_histogram()    display histogram of a volume with pixel values  
+                     show_all()    display all images in an array of images one by one   
 
 # TESTING: 
 
