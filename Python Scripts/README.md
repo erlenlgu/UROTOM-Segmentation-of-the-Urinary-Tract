@@ -37,8 +37,7 @@ Written by Erlend Løland Gundersen
       display_tools     displaying collages, slideshows, histograms, etc.
         noise_tools     denoising functions like Gaussian smoothing, BM3D, etc.
          file_tools     unzipping, create folder, directory paths dictionary...
- segmentation_tools     clustering and thresholding
- 
+ segmentation_tools     clustering and thresholding  
  
  # IMPORTANT PARAMETERS:
 
