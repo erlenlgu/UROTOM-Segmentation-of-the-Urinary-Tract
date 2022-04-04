@@ -38,7 +38,7 @@ Written by Erlend Løland Gundersen
                  noise_tools     denoising functions like Gaussian smoothing, BM3D, etc.
                   file_tools     unzipping, create folder, directory paths dictionary...
           segmentation_tools     clustering and thresholding  
- 
+          
  # IMPORTANT PARAMETERS:
 
  **These are used in show_all_clusters(), show_individual_clusters(),
@@ -68,13 +68,13 @@ Written by Erlend Løland Gundersen
   show_individual_clusters()     display selected clusters in a 4D clusters array
                save_all_3d()     save all clusters in 4D clusters array as 3D models
          threshold_sliders()     display a thresholded version of a volume (with sliders)
-
+         
    **From display_tools:**
                       
    show_axial_coronal_sagital()     display the dicom series from three angles   
                show_histogram()     display histogram of a volume with pixel values  
                      show_all()     display all images in an array of images one by one   
-
+                     
 # TESTING: 
 
     # The "Testing" folder contains scripts used while making functions in "Tools"
