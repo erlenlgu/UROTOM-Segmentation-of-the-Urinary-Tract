@@ -6,4 +6,4 @@ Medical Imaging Project: UROTOM
 
 • System of Noninvasive Monitoring and Diagnosis of the Lower Urinary Tract
 
-• Segmentation, noise reduction, and three-dimensional visualization of DICOMs using Python and ML
+• Segmentation, Noise Reduction, and Three-Dimensional Visualization of DICOMs using Python and ML
