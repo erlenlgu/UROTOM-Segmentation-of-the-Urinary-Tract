@@ -1,2 +1,0 @@
-Fuzzy clustering allows points to be in more than one cluster.
-
